@@ -3,7 +3,7 @@ using System.Globalization;
 
 namespace Primeiro.Entities
 {
-    class SavingsAccount
+    class SavingsAccount : Account
     {
         public double InterestRate { get; set; }
 
