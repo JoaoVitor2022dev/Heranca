@@ -18,5 +18,12 @@ namespace Primeiro.Entities
         {
             Balance += Balance * InterestRate;    
         }
+
+        public override void Withdraw(double amount)
+        {
+           //  neste caso é para fazer o sistema de pegar um metodo da superclasse
+           base.Withdraw(amount); 
+           Balance -= amount; 
+        }
     }
 }
